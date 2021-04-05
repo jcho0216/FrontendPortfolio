@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 
 //image import
-import mePic from "../../1_images/me.jpeg";
-import ausPic from "../../1_images/aus.jpg";
+import mePic from "../1_images/me.jpeg";
+import ausPic from "../1_images/aus.jpg";
 
 //style import
 // import MainPageStyle from "../styled-components/MainPageStyle";
@@ -28,6 +28,7 @@ const MainPage = () => {
     const me = images.lastElementChild;
 
     TweenMax.to(app, 0, { css: { visibility: "visible" } });
+    
     tl.from(aus, 1.2, { y: 1000, ease: Power3.easeOut }, "Start")
       .from(aus.firstElementChild, 2, { scale: 1.6, ease: Power3.easeOut }, 0.3)
       .from(me, 1.2, { y: 1000, ease: Power3.easeOut }, 0.4)
@@ -53,14 +54,14 @@ const MainPage = () => {
         <S.TextsContainer ref={(el) => (texts = el)}>
           <S.MainText>Junseo, CHO</S.MainText>
           <S.TextsContainerInner>
-            <h3>"주니어 프론트엔드 개발자"</h3>
+            <h3>"Junior FrontEnd Developer"</h3>
           </S.TextsContainerInner>
           <S.TextsContainerInner>
             <S.WhiteLine />
           </S.TextsContainerInner>
           <S.TextsContainerInner>
             <p>
-              제 포트폴리오 사이트에 오신 것을 환영합니다!<br/>
+              Welcome To My Portfolio Web Site, Thanks for visiting ^^<br/>
             </p>
           </S.TextsContainerInner>
         </S.TextsContainer>
