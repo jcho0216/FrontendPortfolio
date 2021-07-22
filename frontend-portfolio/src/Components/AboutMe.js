@@ -13,7 +13,7 @@ const AboutMe = () => {
     });
     Aos.refresh();
 
-  },[])
+  })
 
   let MyPictureRef = useRef(null); 
   let Container = useRef(null);
@@ -30,15 +30,6 @@ const AboutMe = () => {
     y: 44
   })
   
-  useEffect(()=> {  
-    console.log(MyPictureRef);
-
-   
-
-  })
-
-  
-
   return (
     <S.Container ref={(el) => (Container = el)}>
       <S.MyPicture>
